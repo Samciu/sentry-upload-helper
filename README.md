@@ -22,6 +22,9 @@ new SentryHelper({
     urlSuffix: '',             // add a suffix source map urls after stripping them
     ext: ['js', 'map', 'jsbundle', 'bundle'],  // override file extensions to scan for
 });
+
+// 执行上传
+sentryHelper.finalizeRelease();
 ```
 
 在根目录添加配置授权文件 .sentryclirc
